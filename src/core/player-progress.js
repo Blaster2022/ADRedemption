@@ -72,12 +72,21 @@ export class PlayerProgress {
   //Custom Progress booleans starts here
 
   get isMendingUnlocked() {
-    return new Decimal(this._player.mends).gt(new Decimal(0));
+    return new Decimal(this._player.mends).gt(new Decimal(0)) || this.isRaptureUnlocked;
   }
 
   static mendingUnlocked(){
     return PlayerProgress.current.isMendingUnlocked
   }
+
+  get isRaptureUnlocked() {
+    return new Decimal(this._player.rapts).gt(new Decimal(0));
+  }
+
+  static raptureUnlocked(){
+    return PlayerProgress.current.isRaptureUnlocked
+  }
+
 
 
 }
