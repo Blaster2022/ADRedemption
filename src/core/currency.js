@@ -519,3 +519,25 @@ Currency.mends = new class extends DecimalCurrency {
     //super.reset();
   }
 }();
+
+Currency.rapturePoints = new class extends DecimalCurrency {
+  get value() { return player.rapturePoints; }
+  set value(value) {
+    player.rapturePoints = value;
+    /*player.records.thisMend.maxiM = player.records.thisMend.maxiM.max(value);
+    if (player.records.bestMend.bestiM.lt(value)) {
+      player.records.bestMend.bestiM = value;
+      player.records.bestMend.bestiMSet = Glyphs.copyForRecords(Glyphs.active.filter(g => g !== null));
+    }
+    }*/
+  }
+
+  get startingValue() {
+    return new Decimal(0);
+  }
+
+  reset() {
+    super.reset();
+    //player.records.thisMend.maxiM = this.startingValue;
+  }
+}();

@@ -316,6 +316,9 @@ window.player = {
     mending:{
       isEnd: false
     },
+    rapture:{
+      noMends: true
+    },
     permanent: {
       emojiGalaxies: 0,
       singleTickspeed: 0,
@@ -407,6 +410,16 @@ window.player = {
     bestMend: {
       time: Number.MAX_VALUE,
       realTime: Number.MAX_VALUE,
+    },
+    bestRapture:{
+      time: Number.MAX_VALUE,
+      realTime: Number.MAX_VALUE,
+      maxAM: DC.D0,
+      maxIP: DC.D0,
+      maxEP: DC.D0,
+      maxRM: DC.D0,
+      maxiM: DC.D0,
+      maxMvR: DC.D0
     }
   },
   speedrun: {
@@ -1007,7 +1020,9 @@ window.player = {
   mendingPoints: DC.D0,
   mends: DC.D0,
   mendingUpgrades: new Set(),
-  mvrmultUpgrades: 0
+  mvrmultUpgrades: 0,
+
+  rapts: 0
 };
 
 export const Player = {

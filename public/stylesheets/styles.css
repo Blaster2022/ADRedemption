@@ -113,6 +113,8 @@ html {
 
   --color-destroyer--base: rgb(18, 190, 243);
   --color-kohler--base: #be1c37;
+
+  --color-rapture: #99da;
 }
 
 :root .t-metro,
@@ -137,6 +139,8 @@ html {
   --color-mending: #cc2988;
   --color-mending-dark: #57113a;
   --color-mending-light: #d697bc;
+  
+  --color-rapture: #99da;
 }
 
 :root .t-dark {
@@ -161,6 +165,8 @@ html {
   --color-mending: #cc2988;
   --color-mending-dark: #57113a;
   --color-mending-light: #d697bc;
+  
+  --color-rapture: #99da;
 }
 
 :root .t-dark-metro {
@@ -191,6 +197,8 @@ html {
   --color-mending: #cc2988;
   --color-mending-dark: #57113a;
   --color-mending-light: #d697bc;
+  
+  --color-rapture: #99da;
 }
 
 :root .t-amoled {
@@ -236,6 +244,8 @@ html {
   --color-mending: #cc2988;
   --color-mending-dark: #57113a;
   --color-mending-light: #d697bc;
+  
+  --color-rapture: #99da;
 }
 
 :root .t-s1 {
@@ -262,6 +272,8 @@ html {
   --color-mending: #cc2988;
   --color-mending-dark: #57113a;
   --color-mending-light: #d697bc;
+  
+  --color-rapture: #99da;
 }
 
 :root .t-s4 {
@@ -798,6 +810,16 @@ button:focus {
 
 .o-tab-btn--mending:hover {
   background: var(--color-mending);
+}
+
+.o-tab-btn--rapture {
+  color: var(--color-rapture);
+  background-color: var(--color-prestige--accent);
+  border-color: var(--color-rapture);
+}
+
+.o-tab-btn--rapture:hover {
+  background: var(--color-rapture);
 }
 /* #endregion tab buttons */
 

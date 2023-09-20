@@ -5,6 +5,7 @@ window.PRESTIGE_EVENT = {
   ETERNITY: 3,
   REALITY: 4,
   MENDING: 5,
+  RAPTURE: 6,
 };
 
 function deepFreeze(obj) {

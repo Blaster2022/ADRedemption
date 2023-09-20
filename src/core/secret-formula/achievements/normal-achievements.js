@@ -1434,4 +1434,13 @@ export const normalAchievements = [
     name: "198",
     description: "placeholder",
   },
+  {
+    id: 201,
+    //displayID: 201,
+    name: "I fixed it",
+    description: "Ascend to the next Rapture.",
+    get reward(){
+      return "[TBD]"
+    },
+  }
 ];

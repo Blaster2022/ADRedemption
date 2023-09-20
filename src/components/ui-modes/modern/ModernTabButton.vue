@@ -156,4 +156,8 @@ export default {
   background-color: var(--color-mending);
 }
 
+.o-tab-btn--rapture::before {
+  background-color: var(--color-rapture);
+}
+
 </style>

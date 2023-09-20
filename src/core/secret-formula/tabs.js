@@ -533,12 +533,39 @@ export const tabs = [
     ]
   },
   {
+    key: "rapture",
+    name: "Rapture",
+    hideAt: 2.3,
+    UIClass: "o-tab-btn--rapture",
+    //condition: () => PlayerProgress.raptureUnlocked(),
+    id: 11,
+    hidable: true,
+    subtabs: [
+      {
+        key: "raptupgrades",
+        name: "Rapture Upgrades",
+        symbol: "?",
+        component: "RaptureUpgrades",
+        id: 0,
+        hidable: true,
+      },
+      {
+        key: "two",
+        name: "test",
+        symbol: ".",
+        component: "RaptureSubtabTwo",
+        id: 1,
+        hidable: true,
+      }
+    ]
+  },
+  {
     key: "shop",
     name: "Shop",
     ModernUIClass: "shop",
     hideAt: 1.5,
     condition: () => true,
-    id: 11,
+    id: 12,
     hidable: true,
     subtabs: [
       {

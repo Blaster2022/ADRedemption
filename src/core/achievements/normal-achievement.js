@@ -92,6 +92,10 @@ class AchievementState extends GameMechanicState {
   get isPreMend(){
     return this.row < 19;
   }
+
+  get isPreRapture(){
+    return this.row < 20;
+  }
 }
 
 /**

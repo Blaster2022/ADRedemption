@@ -48,6 +48,7 @@ import MendingMilestones from "./mending/MendingMilestones";
 import WarpReality from "./mending/WarpReality";
 import KohlersRealm from "./mending/KohlersRealm";
 import Courrption from "./mending/Courrption";
+import RaptureUpgrades from "./rapture/RaptureUpgrades";
 
 
 const TabComponents = {
@@ -97,7 +98,8 @@ const TabComponents = {
   MendingMilestones,
   WarpReality,
   Courrption,
-  KohlersRealm
+  KohlersRealm,
+  RaptureUpgrades
 };
 
 export default TabComponents;
