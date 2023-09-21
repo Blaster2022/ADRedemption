@@ -49,6 +49,9 @@ import WarpReality from "./mending/WarpReality";
 import KohlersRealm from "./mending/KohlersRealm";
 import Courrption from "./mending/Courrption";
 import RaptureUpgrades from "./rapture/RaptureUpgrades";
+import RaptureMilestones from "./rapture/RaptureUpgrades";
+import RoyalsRealm from "./rapture/RaptureUpgrades";
+
 
 
 const TabComponents = {

@@ -9865,3 +9865,39 @@ input.o-automator-block-input {
 .o-warp-btn--unclickable {
   cursor: auto;
 }
+
+/* #region rapture-tab */
+
+.c-rapture-tab__header {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.c-rapture-tab__rapture-points {
+  color: var(--color-rapture);
+}
+
+/* #region themes */
+
+/* #region t-dark t-s6 t-s10 */
+
+.t-dark .c-rapture-tab__rapture-points,
+.t-s6 .c-rapture-tab__rapture-points,
+.t-s10 .c-rapture-tab__rapture-points {
+  color: white;
+  text-shadow: 0 0 0.7rem;
+}
+
+/* #endregion t-dark t-s6 t-s10 */
+
+/* #region t-s1 */
+
+.t-s1 .c-rapture-tab__rapture-points {
+  text-shadow: 0.1rem 0.1rem 0 black;
+}
+
+/* #endregion t-s1 */
+
+/* #endregion themes */
+
+/* #endregion infinity-tab */

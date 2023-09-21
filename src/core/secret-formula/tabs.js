@@ -535,28 +535,36 @@ export const tabs = [
   {
     key: "rapture",
     name: "Rapture",
-    hideAt: 2.3,
+    //hideAt: 2.3, //Sequence is disabled
     UIClass: "o-tab-btn--rapture",
-    //condition: () => PlayerProgress.raptureUnlocked(),
+    condition: () => true,//PlayerProgress.raptureUnlocked(),
     id: 11,
     hidable: true,
     subtabs: [
       {
         key: "raptupgrades",
         name: "Rapture Upgrades",
-        symbol: "?",
+        symbol: "!",
         component: "RaptureUpgrades",
         id: 0,
         hidable: true,
       },
       {
-        key: "two",
-        name: "test",
-        symbol: ".",
-        component: "RaptureSubtabTwo",
+        key: "raptmilestones",
+        name: "Rapture Milestones",
+        symbol: "@",
+        component: "RaptureMilestones",
         id: 1,
         hidable: true,
-      }
+      },
+      {
+        key: "royalrealm",
+        name: "Royal's Realm [NYI]",
+        symbol: "#",
+        component: "RoyalsRealm",
+        id: 2,
+        hidable: true,
+      },
     ]
   },
   {

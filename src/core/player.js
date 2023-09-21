@@ -1022,7 +1022,8 @@ window.player = {
   mendingUpgrades: new Set(),
   mvrmultUpgrades: 0,
 
-  rapts: 0
+  rapts: DC.D0,
+  rapturePoints: DC.D0
 };
 
 export const Player = {
@@ -1060,6 +1061,9 @@ export const Player = {
   },
   get canMend(){
     return player.isGameEnd || (MendingMilestone.six.isReached && player.antimatter.exponent >= 9e15);
+  },
+  get canRapture(){
+    //return (player.isWarped() && player.antimatter.gte(DC.END2))
   },
   get bestRunIPPM() {
     return GameCache.bestRunIPPM.value;

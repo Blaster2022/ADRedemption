@@ -318,6 +318,13 @@ export const shortcuts = [
     visible: () => true
   },
   {
+    name: "[Redemption + Redemption Alternate] Rapture",
+    keys: ["p"],
+    type: "bind",
+    //function: () => keyboardEditAutobuyers(),
+    visible: () => true
+  },
+  {
     name: "Fullscreen",
     keys: ["F10"],
     type: "bind",

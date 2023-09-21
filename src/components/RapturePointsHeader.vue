@@ -3,14 +3,14 @@ export default {
   name: "RapturePointsHeader",
   data() {
     return {
-      rapturePoints: 0,//new Decimal(),
+      rapturePoints: new Decimal(),
       isVisible: true
     };
   },
   methods: {
     update() {
       this.rapturePoints.copyFrom(Currency.rapturePoints);
-      this.isVisible = true;//PlayerProgress.infinityUnlocked();
+      this.isVisible = true;//PlayerProgress.raptureUnlocked();
     }
   }
 };
@@ -19,10 +19,10 @@ export default {
 <template>
   <div
     v-show="isVisible"
-    class="c-infinity-tab__header"
+    class="c-rapture-tab__header"
   >
     You have
-    <span class="c-infinity-tab__infinity-points">{{ format(rapturePoints, 2) }}</span>
+    <span class="c-rapture-tab__rapture-points">{{ format(rapturePoints, 2) }}</span>
     {{ pluralize("Restless Soul", rapturePoints) }}.
   </div>
 </template>
