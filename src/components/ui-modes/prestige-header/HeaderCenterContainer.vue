@@ -2,6 +2,7 @@
 import ArmageddonButton from "../../tabs/celestial-pelle/ArmageddonButton";
 import RealityCurrencyHeader from "../../RealityCurrencyHeader";
 import MendingButton from "./MendingButton";
+import RaptureButton from "./RaptureButton";
 
 import HeaderTickspeedInfo from "../HeaderTickspeedInfo";
 
@@ -17,10 +18,12 @@ export default {
   components: {
     HeaderTickspeedInfo,
     MendingButton,
+    RaptureButton,
     RealityCurrencyHeader,
     RealityButton,
     ArmageddonButton,
-    MendingPointsHeader
+    MendingPointsHeader,
+    RapturePointsHeader
 },
   data() {
     return {
@@ -28,10 +31,12 @@ export default {
       isModern: false,
       hasRealityButton: false,
       hasMendingButton: false,
+      hasRaptureButton: false,
       isDoomed: false,
       antimatter: new Decimal(0),
       antimatterPerSec: new Decimal(0),
-      mendingPoints: new Decimal(0)
+      mendingPoints: new Decimal(0),
+      rapturePoints: new Decimal(0)
     };
   },
   methods: {
@@ -39,6 +44,7 @@ export default {
       this.shouldDisplay = player.break || !Player.canCrunch;
       if (!this.shouldDisplay) return;
       this.mendingPoints.copyFrom(Currency.mendingPoints.value.floor())
+      this.rapturePoints.copyFrom(Currency.rapturePoints.value.floor())
       this.isModern = player.options.UIType == 'Modern';
       this.isDoomed = Pelle.isDoomed;
       this.antimatter.copyFrom(Currency.antimatter);
@@ -83,6 +89,11 @@ export default {
 }
 
 .c-mending-points {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.c-rapture-points {
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
 }
