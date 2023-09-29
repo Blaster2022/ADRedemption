@@ -3,7 +3,7 @@
 import PrimaryButton from "@/components/PrimaryButton";
 
 export default {
-  name: "RaptureSubtabTwo",
+  name: "RoyalsRealm",
   components: {
     PrimaryButton,
   }
